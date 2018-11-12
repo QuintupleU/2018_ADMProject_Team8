@@ -1,0 +1,19 @@
+
+DOE(
+	Space Filling Design,
+	{Add Response( Maximize, "Y", ., ., . ),
+	Add Factor( Continuous, 0, 40, "TRLN", 0 ),
+	Add Factor( Continuous, 0, 40, "TRUN", 0 ),
+	Add Factor( Continuous, 0.996, 1, "FCDO", 0 ),
+	Add Factor( Continuous, 0.82944, 1.2, "FRFU", 0 ),
+	Add Factor( Continuous, 0.69252, 1, "FRHT", 0 ),
+	Add Factor( Continuous, 0.995, 1, "FRVT", 0 ),
+	Add Factor( Continuous, 0.9921, 1, "FRWI", 0 ),
+	Add Factor( Continuous, 1.054858, 1.684, "FRWI1", 0 ),
+	Add Factor( Continuous, 0.467077, 0.7255, "FRWI2", 0 ),
+	Add Factor( Continuous, 7.933, 11, "AR", 0 ),
+	Add Factor( Continuous, 109.3897, 121.54, "WSR", 0 ),
+	Add Factor( Continuous, 0.97, 1, "SWETF", 0 ), Set Random Seed( 623277797 ),
+	Space Filling Design Type( Latin Hypercube, 5000 ), Simulate Responses( 0 ),
+	Set Run Order( Randomize ), Make Table}
+);

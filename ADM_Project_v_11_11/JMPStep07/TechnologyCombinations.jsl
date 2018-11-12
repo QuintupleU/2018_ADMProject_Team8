@@ -1,0 +1,32 @@
+
+DOE(
+	Full Factorial Design,
+	{Add Factor(
+		Continuous,
+		{0, 1},
+		"Damage Arresting Stitched Composites - Fuselage",
+		0
+	), Add Factor(
+		Continuous,
+		{0, 1},
+		"Damage Arresting Stitched Composites - Wing",
+		0
+	), Add Factor( Continuous, {0, 1}, "Natural Laminar Flow - Nacelle", 0 ),
+	Add Factor( Continuous, {0, 1}, "Riblets - Fuselage", 0 ),
+	Add Factor( Continuous, {0, 1}, "Low Interference Nacelle", 0 ),
+	Add Factor(
+		Continuous,
+		{0, 1},
+		"Primary Structure Joining Methodologies - Wing",
+		0
+	), Add Factor( Continuous, {0, 1}, "Advanced Sandwich Composites - Wing", 0 ),
+	Add Factor(
+		Continuous,
+		{0, 1},
+		"Out-of-Autoclave Composite Fabrication- Tail",
+		0
+	), Add Factor( Continuous, {0, 1}, "Advanced Aero Wing", 0 ),
+	Add Factor( Continuous, {0, 1}, "Advanced Sandwich Composites - Fuselage", 0 ),
+	Set Random Seed( 655801185 ), Make Design, Simulate Responses( 0 ),
+	Set Run Order( Randomize ), Make Table}
+);
